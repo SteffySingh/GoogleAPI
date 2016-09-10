@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body, html{width: 100%; height: 100%; margin: 0}
+        body{ display: flex; flex-direction: column}
+        header{ max-height: 100px; background: #ffddaa}
+        section{ flex-grow: 1;}
+        #map-canvas{ width: 100%; height: 610px }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="find">Find Me</button>
+        <button id="position">Get Position</button>
+        <button id="drop">Drop Marker</button>
+    </header>
+    <section>
+    <div id="map-canvas"></div>
+    </section>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqQRP9oGsPUrnwGTaREdWx_jV65b1m5tY"></script>
+    <script src="GoogleAPI.js"></script>
+</body>
+</html>
